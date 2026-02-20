@@ -293,7 +293,7 @@
 
     .hero .photo { 
       aspect-ratio: 4/5; 
-      background-image: url("images/image_profile.png"); 
+      background-image: url("images/Profile_image.png"); 
       background-size: cover; 
       background-position: center; 
       border-radius: 24px; 
@@ -776,3 +776,4 @@
   from { transform: scale(0.8); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
