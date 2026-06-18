@@ -220,3 +220,18 @@ document.getElementById("popupClose").onclick = function() {
 document.getElementById("errorPopupClose").onclick = function() {
   document.getElementById("errorPopup").style.display = "none";
 };
+
+// ==================== Hover to Play/Pause Project Videos ====================
+document.querySelectorAll('.hover-video-card').forEach(card => {
+  const video = card.querySelector('video');
+  
+  if (video) {
+    card.addEventListener('mouseenter', () => {
+      video.play().catch(error => console.log("Video playback caught/interrupted:", error));
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      video.pause();
+    });
+  }
+});
